@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopify Store Package | ₹7,000</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f7f8fa;
+  color:#171717;
+  line-height:1.5;
+}
+
+header{
+  width:100%;
+  padding:18px 20px;
+  background:#ffffff;
+  border-bottom:1px solid #e8e8e8;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:21px;
+  font-weight:800;
+}
+
+.logo span{
+  color:#16a34a;
+}
+
+.nav-btn{
+  text-decoration:none;
+  background:#171717;
+  color:white;
+  padding:10px 16px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.hero{
+  max-width:1100px;
+  margin:auto;
+  padding:65px 20px 45px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:35px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-block;
+  background:#e9f9ef;
+  color:#12843e;
+  padding:8px 13px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font-size:48px;
+  line-height:1.08;
+  margin-bottom:18px;
+}
+
+.hero h1 span{
+  color:#16a34a;
+}
+
+.hero p{
+  color:#626262;
+  font-size:16px;
+  max-width:620px;
+  margin-bottom:25px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 20px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
+
+.primary{
+  background:#16a34a;
+  color:white;
+}
+
+.secondary{
+  background:white;
+  color:#171717;
+  border:1px solid #ddd;
+}
+
+.price-card{
+  background:#171717;
+  color:white;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 18px 45px rgba(0,0,0,.14);
+}
+
+.price-card small{
+  color:#bdbdbd;
+}
+
+.price{
+  font-size:54px;
+  font-weight:800;
+  margin:8px 0;
+}
+
+.price span{
+  font-size:16px;
+  color:#aaa;
+}
+
+.price-card ul{
+  list-style:none;
+  margin-top:20px;
+}
+
+.price-card li{
+  padding:9px 0;
+  border-bottom:1px solid #303030;
+  font-size:14px;
+}
+
+.price-card li::before{
+  content:"✓";
+  color:#4ade80;
+  font-weight:bold;
+  margin-right:9px;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:55px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.section-title h2{
+  font-size:32px;
+  margin-bottom:8px;
+}
+
+.section-title p{
+  color:#666;
+  font-size:14px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.feature{
+  background:white;
+  padding:22px;
+  border-radius:14px;
+  border:1px solid #e9e9e9;
+  transition:.25s;
+}
+
+.feature:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(0,0,0,.07);
+}
+
+.icon{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eaf9ef;
+  color:#16a34a;
+  font-weight:bold;
+  margin-bottom:13px;
+}
+
+.feature h3{
+  font-size:16px;
+  margin-bottom:6px;
+}
+
+.feature p{
+  font-size:13px;
+  color:#666;
+}
+
+@media(max-width:800px){
+  .hero{
+    grid-template-columns:1fr;
+    padding-top:40px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .features{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:520px){
+  header{
+    padding:14px 15px;
+  }
+
+  .logo{
+    font-size:18px;
+  }
+
+  .nav-btn{
+    padding:8px 11px;
+    font-size:11px;
+  }
+
+  .hero{
+    padding:38px 15px 30px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .price-card{
+    padding:24px;
+  }
+
+  .price{
+    font-size:46px;
+  }
+
+  section{
+    padding:40px 15px;
+  }
+
+  .section-title h2{
+    font-size:27px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Shopify<span>Store</span></div>
+    <a href="#contact" class="nav-btn">Get Started</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+
+  <div>
+    <div class="badge">COMPLETE SHOPIFY STORE PACKAGE</div>
+
+    <h1>
+      Build Your
+      <span>Professional</span>
+      Shopify Store
+    </h1>
+
+    <p>
+      Get a modern, responsive and conversion-focused Shopify store
+      designed and configured according to your business requirements.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#features" class="btn primary">View Features</a>
+      <a href="#contact" class="btn secondary">Contact Developer</a>
+    </div>
+  </div>
+
+  <div class="price-card">
+    <small>COMPLETE PACKAGE</small>
+
+    <div class="price">
+      ₹7,000 <span>/ project</span>
+    </div>
+
+    <p style="color:#aaa;font-size:13px;">
+      Professional Shopify store design & setup
+    </p>
+
+    <ul>
+      <li>Premium modern design</li>
+      <li>Mobile responsive</li>
+      <li>Products & collections</li>
+      <li>Cart & checkout setup</li>
+      <li>Payment & shipping setup</li>
+      <li>Basic SEO setup</li>
+      <li>Complete testing</li>
+    </ul>
+  </div>
+
+</section>
+
+<section id="features">
+
+  <div class="section-title">
+    <h2>What's Included?</h2>
+    <p>Everything you need to launch your Shopify store.</p>
+  </div>
+
+  <div class="features">
+
+    <div class="feature">
+      <div class="icon">01</div>
+      <h3>Premium Design</h3>
+      <p>Modern and professional Shopify store design.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">02</div>
+      <h3>Responsive Design</h3>
+      <p>Optimized for mobile, tablet and desktop devices.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">03</div>
+      <h3>Homepage Design</h3>
+      <p>Clean and attractive homepage structure for your brand.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">04</div>
+      <h3>Product Pages</h3>
+      <p>Product listing and detailed product pages setup.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">05</div>
+      <h3>Collections</h3>
+      <p>Categories and product collections organized properly.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">06</div>
+      <h3>Cart & Checkout</h3>
+      <p>Add-to-cart and Shopify checkout configuration.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">07</div>
+      <h3>Payment Gateway</h3>
+      <p>Payment gateway integration and configuration.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">08</div>
+      <h3>Shipping Setup</h3>
+      <p>Shipping settings configured according to your business.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">09</div>
+      <h3>WhatsApp Integration</h3>
+      <p>Easy customer communication through WhatsApp.</p>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+</body>
+      </html>
